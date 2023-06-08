@@ -7,42 +7,60 @@
     <title>divulgação</title>
 
 
-    <link id="pagestyle" href="/public/css/material-kit.css" rel="stylesheet" />
+    <link id="pagestyle" href="/public/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
 
 
 </head>
-<body>
+<body style="overflow: hidden;">
+    <div id="background">
+        <div class="pai">
+            <div class="total"></div>
+            <div class="parcial"></div>
+        </div>
+        
+    </div>
 
-    <nav class="navbar bg-body-tertiary" >
-        <a class="nav-item nav-link" href="#">Panelinha</a>
-        <a class="nav-item
-        ">Baixe Já !!!</a>
+    <nav id="navbar" class="navbar navbar-expand-lg  justify-content-around " >
+        <a class=" text nav-item nav-link" href="#">Panelinha</a>
+        <a class=" text nav-item nav-link" href="#">Baixe Já !</a>
     </nav>
-    <div class="container mt-5">
+    
+    <div class="container w-50 mt-5 " >
         <div class="row">
-            <div class="col">
-                <h1>Organize hoje seus afazeres</h1>
-                <h2>Uma sulução rápida e prática para gerenciar suas tarefas</h2>
+            <div class="col-9 mt-5 ">
+                <h1 id="title" class="">Organize hoje seus afazeres!</h1>
+                <br>
+                <h3>Uma sulução rápida e prática para gerenciar suas tarefas.</h3>
             </div>
-            <div class="col-4 position-relative ">
-                <picture class="position-absolute ">
+            <!-- carousel do celular -->
+            <div id="carousel-celular" class=" col carousel slide " data-bs-ride="carousel">
+                <!-- carousel principal onde fica os itens   -->
+                <picture class="position-absolute z-1">
                     <img src="/public/img/pngtree-cell-phone.png" alt="celular-borda" srcset="/public/img/pngtree-cell-phone.png">
                 </picture>
-                <picture class="">
-                    <img style="height: 333px; border-radius: 25px; width: 170px; padding: 5px;" src="/public/img/Screenshot_smatphone.jpg" alt="Screenshot_smatphone" srcset="/public/img/Screenshot_smatphone.jpg">
-                </picture>
+                <div class="position-relative carousel-inner" id="carousel-fotos" style="width: 170px;">
+                    <div class="carousel-item active">
+                        <img style="height: 333px; border-radius: 25px; width: 170px; padding: 5px;" src="/public/img/tela-1.jpeg" alt="Screenshot_smatphone" srcset="/public/img/tela-3.jpeg" >
+                    </div>
+                    <div class="carousel-item ">
+                        <img style="height: 333px; border-radius: 25px; width: 170px; padding: 5px;" src="/public/img/tela-2.jpeg" alt="Screenshot_smatphone" srcset="/public/img/tela-3.jpeg" >
+                    </div>
+                    <div class="carousel-item ">
+                        <img style="height: 333px; border-radius: 25px; width: 170px; padding: 5px;" src="/public/img/tela-3.jpeg" alt="Screenshot_smatphone" srcset="/public/img/tela-3.jpeg" >
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="mt-5 row d-grid gap-lg-1 d-md-block">
-            <button class="btn btn-primary ">appStore</button>
+        <div class="mt-5 row-cols-4">
             <button class="btn btn-primary ">PlayStore</button>
+            <button class="btn btn-secondary ">AppStore</button>
         </div>
     </div>    
 </body>
-
-    <script src="/public/js/core/popper.min.js"></script>
-    <script src="/public/js/core/bootstrap.min.js"></script>
-    <script src="/public/js/plugins/perfect-scrollbar.min.js"></script>
-
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </html>
