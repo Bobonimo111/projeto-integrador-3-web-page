@@ -13,7 +13,7 @@
 
 
 </head>
-<body style="overflow: hidden;">
+<body>
     <div id="background">
         <div class="pai">
             <div class="total"></div>
@@ -23,19 +23,23 @@
     </div>
 
     <nav id="navbar" class="navbar navbar-expand-lg  justify-content-around " >
-        <a class=" text nav-item nav-link" href="#">Panelinha</a>
-        <a class=" text nav-item nav-link" href="#">Baixe Já !</a>
+        <div class="nav-item">
+            <a class="text nav-link" href="#">Panelinha</a>
+        </div>
+        <div class="nav-item">
+            <a class="text nav-link" href="#">Baixe Já !</a>
+        </div>
     </nav>
-    
-    <div class="container w-50 mt-5 " >
-        <div class="row">
-            <div class="col-9 mt-5 ">
+    <!-- row principal -->
+    <div class="container row mt-3 mt-sm-2" >
+        <div class="row justify-content-center">
+            <div class="col-8 mt-sm-5 ">
                 <h1 id="title" class="">Organize hoje seus afazeres!</h1>
                 <br>
                 <h3>Uma sulução rápida e prática para gerenciar suas tarefas.</h3>
             </div>
             <!-- carousel do celular -->
-            <div id="carousel-celular" class=" col carousel slide " data-bs-ride="carousel">
+            <div id="carousel-celular" class="col-sm-4 carousel slide " data-bs-ride="carousel">
                 <!-- carousel principal onde fica os itens   -->
                 <picture class="position-absolute z-1">
                     <img src="/public/img/pngtree-cell-phone.png" alt="celular-borda" srcset="/public/img/pngtree-cell-phone.png">
@@ -54,7 +58,7 @@
             </div>
         </div>
 
-        <div class="mt-5 row-cols-4">
+        <div class="mt-5 row-cols-4 justify-content-center">
             <button class="btn btn-primary ">PlayStore</button>
             <button class="btn btn-secondary ">AppStore</button>
         </div>
