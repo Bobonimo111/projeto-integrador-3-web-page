@@ -1,31 +1,38 @@
-#title  {
+#title {
     color: #6f42c1;
 }
-#carousel-celular{
+
+#carousel-celular {
     width: 190px;
 }
 
-#background{
+
+#background {
     overflow: hidden;
     position: absolute;
     z-index: -1;
     width: 100vw;
-    height: auto;
-    
+    height: calc(100vh + 20px);
+
+
 }
-#background>.pai{
+
+#background>.pai {
     position: relative;
     width: 100%;
     height: 100%;
 }
-#background>.pai>.total{
+
+#background>.pai>.total {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgb(223, 200, 244);
 }
-#background>.pai>.parcial{
+
+#background>.pai>.parcial {
     position: absolute;
-    
+
     top: -100px;
     right: -100px;
     height: 80vh;
@@ -34,10 +41,13 @@
     border-radius: 30px;
     rotate: -35rad;
 }
-#navbar{
+
+
+#navbar {
     background-color: #6f42c1;
     color: white;
 }
-#navbar>a{
+
+#navbar>a {
     padding: 10px;
 }
